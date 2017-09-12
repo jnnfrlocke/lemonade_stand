@@ -13,8 +13,10 @@ namespace LemonadeStand
         {
             IntroduceGame();
             DisplayTodaysWeather();
-            BuyIngredients();
+            todayStock.BuyIngredients();
         }
+
+        public Ingredients todayStock = new Ingredients();
 
         public void IntroduceGame()
         {
@@ -29,25 +31,14 @@ namespace LemonadeStand
             todayWeather.Sun();
             todayWeather.WindSpeed();
             todayWeather.Humid();
-            Console.WriteLine($"Today the temperature is forecast to be {todayWeather.temperature} degrees Farenheit. \nIt will be {todayWeather.sunny} with winds of {todayWeather.wind}mph and {todayWeather.humidity}% humidity.");
+            Console.WriteLine($"Today the temperature is forecast to be {todayWeather.temperature} degrees Farenheit. \nIt will be {todayWeather.sunny} with winds of {todayWeather.wind}mph and {todayWeather.humidity}% humidity. \n\nPress enter to continue.");
             Console.ReadLine();
         }
 
-        public void BuyIngredients()
-        {
-            Ingredients todayRecipe = new Ingredients();
-
-            Console.WriteLine("How many lemons do you want to purchase at $1.00/lemon? Please enter a whole number.");
-            todayRecipe.lemons = double.Parse(Console.ReadLine());
-
-            Console.WriteLine("How many cups of sugar do you want to purchase at $.50 per cup?");
-            todayRecipe.sugar = double.Parse(Console.ReadLine());
-
-            Console.WriteLine("How many ice cubes do you want to buy at $.20 per cube?");
-            todayRecipe.ice = double.Parse(Console.ReadLine());             
+        
         }
 
             }
         
-        }
+        
         
