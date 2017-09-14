@@ -9,6 +9,7 @@ namespace LemonadeStand
     public class Recipe : Inventory
     {        
         public double pitchers;
+        public List<double> recipeIngredients = new List<double>();
 
         public double CreateRecipe()
         {
@@ -20,8 +21,10 @@ namespace LemonadeStand
             iceInRecipe = double.Parse(Console.ReadLine());
             Console.WriteLine($"Your recipe today is {lemonsInRecipe} lemons, {sugarInRecipe} cups of sugar, and {iceInRecipe} ice cubes. \nHow many pitchers will you make using these ingredients? Keep in mind each pitcher can hold 8 cups of lemonade. \nPress enter to continue.");
             pitchers = double.Parse(Console.ReadLine());
-            //setPrice.CalcCostPerCup(pitchers); //TODO
             //TrackIngredients();
+            recipeIngredients.Add(lemonsInRecipe);
+            recipeIngredients.Add(sugarInRecipe);
+            recipeIngredients.Add(iceInRecipe);
             return pitchers;
         }
 

@@ -8,8 +8,8 @@ namespace LemonadeStand
 {
     public class Supplies
     {
-        public double lemons = 0;
-        public double sugar = 0;
-        public double ice = 0;
+        public double lemons;
+        public double sugar;
+        public double ice;
     }
 }

@@ -15,7 +15,7 @@ namespace LemonadeStand
             todayWeather.DisplayTodaysWeather();
             todayStock.BuyIngredients();
             todaysRecipe.CreateRecipe();
-            setPrice.CalculateCost();
+            setPrice.CalculateCost(todaysRecipe.lemonsInRecipe,todaysRecipe.sugarInRecipe, todaysRecipe.iceInRecipe);
             setPrice.CalcCostPerCup(todaysRecipe.pitchers);
             setPrice.SetPrice();
             todaySold.CalculateCustomersToday(setPrice.cost);

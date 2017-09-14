@@ -8,9 +8,9 @@ namespace LemonadeStand
 {
     public class Inventory : Supplies
     {
-        public double lemonsInRecipe = 0;
-        public double sugarInRecipe = 0;
-        public double iceInRecipe = 0;
+        public double lemonsInRecipe;
+        public double sugarInRecipe;
+        public double iceInRecipe;
         
         public void TrackIngredients()
         {
