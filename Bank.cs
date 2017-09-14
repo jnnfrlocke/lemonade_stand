@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    public class Recipe : Ingredients
-    {        
-           
+    class Bank
+    {
     }
 }

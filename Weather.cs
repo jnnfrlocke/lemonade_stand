@@ -36,8 +36,12 @@ namespace LemonadeStand
             humidity = 60;
             return humidity;
         }
-        
-        
+
+        public void DisplayTodaysWeather()
+        {   
+            Console.WriteLine($"Today the temperature is forecast to be {temperature} degrees Farenheit. \nIt will be {sunny} with winds of {wind}mph and {humidity}% humidity. \n\nPress enter to continue.");
+            Console.ReadLine();
+        }
 
     }
 }
