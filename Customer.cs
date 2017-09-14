@@ -12,11 +12,11 @@ namespace LemonadeStand
         //    customersToday = new Random();
         //public Random buyCustomersToday = new Random();
 
-        public int calculateCustomersToday(int cost)
+        public int calculateCustomersToday(int price)
         {
             int customersToday = rnd.Next(20, 100);
             int buyingCustomersToday = rnd.Next(1, customersToday);
-            double grossIncome = buyingCustomersToday * (cost/100);
+            double grossIncome = buyingCustomersToday * (price/100);
             Console.WriteLine($"{buyingCustomersToday} people bought lemondade from you today. You took in ${grossIncome}.");
             Console.ReadLine();
             return buyingCustomersToday;

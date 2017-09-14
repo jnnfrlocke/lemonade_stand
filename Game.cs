@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class Game
+    public class Game
     {
 
         public void RunGame()
@@ -14,14 +14,14 @@ namespace LemonadeStand
             IntroduceGame();
             todayWeather.DisplayTodaysWeather();
             todayStock.BuyIngredients();
-            SetCost();
-            todaySold.calculateCustomersToday(cost);
+            setPrice.SetCost();
+            todaySold.calculateCustomersToday(setPrice.cost);
         }
 
         public Weather todayWeather = new Weather();
-        public Ingredients todayStock = new Ingredients();
+        public Store todayStock = new Store();
         public Customer todaySold = new Customer();
-        public int cost;
+        public Bank setPrice = new Bank();
 
         public void IntroduceGame()
         {
@@ -29,14 +29,7 @@ namespace LemonadeStand
             Console.ReadLine();
         }
         
-        public int SetCost()
-        {
-            Console.WriteLine("What are you going to charge your customers for a cup of lemonade today? Please enter your cost in cents.");
-            cost = int.Parse(Console.ReadLine());
-            Console.WriteLine($"Your price per cup today is ${(cost/100).ToString("0.00")}.");
-            Console.ReadLine();
-            return cost;
-        }
+        
         
         }
 
