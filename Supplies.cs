@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class Supplies
+    public class Supplies
     {
+        public double lemons = 0;
+        public double sugar = 0;
+        public double ice = 0;
     }
 }

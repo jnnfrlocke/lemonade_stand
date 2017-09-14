@@ -14,14 +14,20 @@ namespace LemonadeStand
             IntroduceGame();
             todayWeather.DisplayTodaysWeather();
             todayStock.BuyIngredients();
-            setPrice.SetCost();
-            todaySold.calculateCustomersToday(setPrice.cost);
+            todaysRecipe.CreateRecipe();
+            setPrice.CalculateCost();
+            setPrice.CalcCostPerCup(todaysRecipe.pitchers);
+            setPrice.SetPrice();
+            todaySold.CalculateCustomersToday(setPrice.cost);
+            todaysInventory.TrackIngredients();
         }
 
         public Weather todayWeather = new Weather();
         public Store todayStock = new Store();
+        public Recipe todaysRecipe = new Recipe();
         public Customer todaySold = new Customer();
         public Bank setPrice = new Bank();
+        public Inventory todaysInventory = new Inventory();
 
         public void IntroduceGame()
         {
@@ -29,11 +35,8 @@ namespace LemonadeStand
             Console.ReadLine();
         }
         
-        
-        
-        }
-
-            }
+    }
+}
         
         
         

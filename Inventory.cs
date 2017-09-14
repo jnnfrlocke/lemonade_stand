@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    public class Inventory
+    public class Inventory : Supplies
     {
         public double lemonsInRecipe = 0;
         public double sugarInRecipe = 0;
         public double iceInRecipe = 0;
+        
         public void TrackIngredients()
         {
             double newLemonStock;
