@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    public class Inventory : Supplies
+    public class StandInventory : Warehouse
     {
         public double lemonsInRecipe;
         public double sugarInRecipe;

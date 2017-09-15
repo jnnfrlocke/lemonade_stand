@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    public class Bank : Store
+    public class CashBox : Store
     {
         public double cost;
         public double todayCost;

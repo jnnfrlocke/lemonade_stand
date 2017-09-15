@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    public class Recipe : Inventory
+    public class Recipe : StandInventory //both are a collection of supplies/ingredients
     {        
         public double pitchers;
         public List<double> recipeIngredients = new List<double>();
