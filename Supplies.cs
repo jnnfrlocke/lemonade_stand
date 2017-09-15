@@ -11,5 +11,8 @@ namespace LemonadeStand
         public double lemons;
         public double sugar;
         public double ice;
+
+        
+
     }
 }

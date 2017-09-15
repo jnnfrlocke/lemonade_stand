@@ -18,7 +18,7 @@ namespace LemonadeStand
             string customersPossible = customersToday.ToString();
             int custPossible = int.Parse(customersPossible);
             double buyingCustomersToday = rnd.Next(1, custPossible);
-            double grossIncome = buyingCustomersToday * (price/100);
+            double grossIncome = Math.Round(buyingCustomersToday * price, 2);
             Console.WriteLine($"{buyingCustomersToday} people bought lemondade from you today. You took in ${grossIncome}.");
             Console.ReadLine();
             return buyingCustomersToday;

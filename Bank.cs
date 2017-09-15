@@ -33,8 +33,8 @@ namespace LemonadeStand
 
         public void CalcCostPerCup(double numberOfPitchers)
         {
-            double costOfCup = todayCost / numberOfPitchers / 8;
-            Console.WriteLine($"The cost of a cup of lemonade is {costOfCup}."  );
+            double costOfCup = Math.Round(todayCost / numberOfPitchers / 8, 2);
+            Console.WriteLine($"The cost of a cup of lemonade is ${costOfCup}."  );
         }
     }
 }

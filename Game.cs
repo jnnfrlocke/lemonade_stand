@@ -31,7 +31,7 @@ namespace LemonadeStand
 
         public void IntroduceGame()
         {
-            Console.WriteLine("Welcome to Lemonade Stand. As you might have guessed, you'll be running your own lemonade stand. You'll take into account the weather and other factors to determine your recipe, to decide how much lemonade to make, to determine your price, and decide if and how much to advertise. \n\nWith your first $20 you'll purchase your supplies. Then you start selling! \n\nPress enter to continue.");
+            Console.WriteLine("Welcome to Lemonade Stand. \nAs you might have guessed, you'll be running your own lemonade stand, taking into account the weather and other factors to determine your recipe, to decide how much lemonade to make, to determine your price, and decide if and how much to advertise. \nYou start with$20 to purchase your supplies. Then you start selling! \nPress enter to continue.");
             Console.ReadLine();
         }
         
