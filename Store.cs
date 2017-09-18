@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Sql;
 
 namespace LemonadeStand
 {
@@ -14,9 +16,28 @@ namespace LemonadeStand
         public double priceOfCups = .20;
 
 
+        SqlConnection suppliesDB;
+        public void SuppliesDatabase()
+        {
+            suppliesDB = new SqlConnection("Server=GUMBY;Database=LemonadeStand;Integrated Security=true");
+        }
+
+
         public void BuyIngredients()
         {
-            Console.WriteLine($"How many lemons do you want to purchase at ${priceOfLemons.ToString("0.00")}/lemon? Lemons are good for a week.");
+            SuppliesDatabase();
+            suppliesDB.Open();
+            SqlCommand command = new SqlCommand("SELECT Item, Quantity, Price", suppliesDB);
+            var result = command.ExecuteNonQuery();
+            Console.WriteLine("gdgdfd");
+          
+
+
+
+
+
+
+            Console.WriteLine($"How many lemons do you want to purchase at ${priceOfLemons.ToString("0.00")} for {14}lemons? Lemons are good for a week.");
             lemons = double.Parse(Console.ReadLine());
             Console.WriteLine($"How many cups of sugar do you want to purchase at ${priceOfSugar.ToString("0.00")} per cup?");
             sugar = double.Parse(Console.ReadLine());

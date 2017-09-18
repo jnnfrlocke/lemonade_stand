@@ -15,6 +15,7 @@ namespace LemonadeStand
             suppliesDB = new SqlConnection("Server=GUMBY;Database=LemonadeStand;Integrated Security=true");
         }
 
+        
 
     }
 }
