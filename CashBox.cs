@@ -28,8 +28,17 @@ namespace LemonadeStand
             double costOfSugar = priceOfSugar * sugarInRecipe;
             double costOfIce = priceOfIce * iceInRecipe;
             todayCost = costOfLemons + costOfSugar + costOfIce;
-            double moneyLeft = 20 - todayCost;
-            Console.WriteLine($"You spent ${todayCost.ToString("0.00")} on supplies and you have ${moneyLeft.ToString("0.00")} left to spend tomorrow. \n\nPress enter to continue.");
+            moneyLeft = 20 - todayCost;
+            if (moneyLeft < 0)
+            {
+                Console.WriteLine($"The total you are trying to spend, ${todayCost}, is more than you have available. Please adjust your purchases.");
+                Console.ReadLine();
+                BuyIngredients();
+            }
+            else
+            {
+                Console.WriteLine($"You spent ${todayCost.ToString("0.00")} on supplies and you have ${moneyLeft.ToString("0.00")} left to spend tomorrow. \n\nPress enter to continue.");
+            }
             //Console.ReadLine();
         }
 
