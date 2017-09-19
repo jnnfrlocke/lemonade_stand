@@ -8,8 +8,8 @@ namespace LemonadeStand
 {
     public class Recipe : StandInventory //both are a collection of supplies/ingredients
     {        
-        public double pitchers;
-        public List<double> recipeIngredients = new List<double>();
+        
+        
 
         public double CreateRecipe()
         {
@@ -20,7 +20,8 @@ namespace LemonadeStand
             Console.WriteLine("How many ice cubes will you use?");
             iceInRecipe = double.Parse(Console.ReadLine());
             Console.WriteLine($"Your recipe today is {lemonsInRecipe} lemons, {sugarInRecipe} cups of sugar, and {iceInRecipe} ice cubes. \nHow many pitchers will you make using these ingredients? Keep in mind each pitcher can hold 8 cups of lemonade. \nPress enter to continue.");
-            pitchers = double.Parse(Console.ReadLine());
+
+            pitchers = int.Parse(Console.ReadLine());
             //TrackIngredients();
             recipeIngredients.Add(lemonsInRecipe);
             recipeIngredients.Add(sugarInRecipe);

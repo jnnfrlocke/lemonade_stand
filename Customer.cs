@@ -12,14 +12,14 @@ namespace LemonadeStand
         //    customersToday = new Random();
         //public Random buyCustomersToday = new Random();
 
-        public double CalculateCustomersToday(double price)
+        public decimal CalculateCustomersToday(decimal price, int numberOfPitchers)
         {
             double customersToday = rnd.Next(20, 100);
             string customersPossible = customersToday.ToString();
             int custPossible = int.Parse(customersPossible);
-            double buyingCustomersToday = rnd.Next(1, custPossible);
-            double grossIncome = Math.Round(buyingCustomersToday * price, 2);
-            Console.WriteLine($"{buyingCustomersToday} people bought lemondade from you today. You took in ${grossIncome}.");
+            decimal buyingCustomersToday = rnd.Next(1, (numberOfPitchers*8));
+            decimal grossIncome = Math.Round(buyingCustomersToday * price, 2);
+            Console.WriteLine($"{buyingCustomersToday} people bought lemondade from you today. You took in ${grossIncome}.\nPress enter to continue.");
             Console.ReadLine();
             return buyingCustomersToday;
         }
