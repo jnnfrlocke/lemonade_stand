@@ -14,6 +14,8 @@ namespace LemonadeStand
         public double priceOfSugar = .20;
         public double priceOfIce = .10;
         public double priceOfCups = .20;
+        public double startingCash = 20;
+        public double moneyLeft;
  
 
         SqlConnection suppliesDB;

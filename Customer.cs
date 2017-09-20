@@ -19,6 +19,7 @@ namespace LemonadeStand
             int custPossible = int.Parse(customersPossible);
             decimal buyingCustomersToday = rnd.Next(1, (numberOfPitchers*8));
             decimal grossIncome = Math.Round(buyingCustomersToday * price, 2);
+            //decimal netIncome = todayStock.moneyLeft - grossIncome;
             Console.WriteLine($"{buyingCustomersToday} people bought lemondade from you today. You took in ${grossIncome}.\nPress enter to continue.");
             Console.ReadLine();
             return buyingCustomersToday;

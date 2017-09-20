@@ -10,6 +10,9 @@ namespace LemonadeStand
     {
         static void Main(string[] args)
         {
+            //UnitTest1 newTest = new UnitTest1;
+            //newTest.Return_Price_SetPrice();
+
             Game newGame = new Game();
             newGame.InitializeGame();
         }

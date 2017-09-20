@@ -10,6 +10,9 @@ namespace LemonadeStand
     {
         public decimal cost;
         public double todayCost;
+        public double costOfLemons;
+        public double costOfSugar;
+        public double costOfIce;
 
         public decimal SetPrice()
         {
@@ -24,11 +27,17 @@ namespace LemonadeStand
         public void CalculateCost(double lemonsInRecipe, double sugarInRecipe, double iceInRecipe)
 
         {
-            double costOfLemons = priceOfLemons * lemonsInRecipe;
-            double costOfSugar = priceOfSugar * sugarInRecipe;
-            double costOfIce = priceOfIce * iceInRecipe;
+            costOfLemons = priceOfLemons * lemonsInRecipe;
+            costOfSugar = priceOfSugar * sugarInRecipe;
+            costOfIce = priceOfIce * iceInRecipe;
             todayCost = costOfLemons + costOfSugar + costOfIce;
-            moneyLeft = 20 - todayCost;
+            CalculateCashLeft(todayCost);
+            //Console.ReadLine();
+        }
+
+        public void CalculateCashLeft(double todayCost)
+        {
+            moneyLeft = startingCash - todayCost;
             if (moneyLeft < 0)
             {
                 Console.WriteLine($"The total you are trying to spend, ${todayCost}, is more than you have available. Please adjust your purchases.");
@@ -39,7 +48,6 @@ namespace LemonadeStand
             {
                 Console.WriteLine($"You spent ${todayCost.ToString("0.00")} on supplies and you have ${moneyLeft.ToString("0.00")} left to spend tomorrow. \n\nPress enter to continue.");
             }
-            //Console.ReadLine();
         }
 
         public double CalcCostPerCup(double numberOfPitchers)

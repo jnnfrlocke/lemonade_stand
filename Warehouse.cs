@@ -14,6 +14,6 @@ namespace LemonadeStand
         public double cups;
         public double[]  todaysIngredientArray = new double[4];
 
-
+        //Children: Store, StandInventory
     }
 }

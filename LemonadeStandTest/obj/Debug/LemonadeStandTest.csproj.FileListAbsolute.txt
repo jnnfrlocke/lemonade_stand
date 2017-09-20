@@ -1,0 +1,11 @@
+C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\LemonadeStand\LemonadeStandTest\bin\Debug\LemonadeStandDB.mdf
+C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\LemonadeStand\LemonadeStandTest\bin\Debug\LemonadeStandDB_log.ldf
+C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\LemonadeStand\LemonadeStandTest\bin\Debug\LemonadeStandTest.dll
+C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\LemonadeStand\LemonadeStandTest\bin\Debug\LemonadeStandTest.pdb
+C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\LemonadeStand\LemonadeStandTest\bin\Debug\LemonadeStand.exe
+C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\LemonadeStand\LemonadeStandTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\LemonadeStand\LemonadeStandTest\bin\Debug\LemonadeStand.pdb
+C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\LemonadeStand\LemonadeStandTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\LemonadeStand\LemonadeStandTest\obj\Debug\LemonadeStandTest.csprojResolveAssemblyReference.cache
+C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\LemonadeStand\LemonadeStandTest\obj\Debug\LemonadeStandTest.dll
+C:\Users\jnnfr\Documents\Visual Studio 2015\Projects\LemonadeStand\LemonadeStandTest\obj\Debug\LemonadeStandTest.pdb

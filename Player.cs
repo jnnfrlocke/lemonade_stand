@@ -11,6 +11,7 @@ namespace LemonadeStand
     {
         string playerOneName;
         string playerTwoName;
+        public double morningCash = 20;
         public CashBox setPrice = new CashBox();
         public Recipe todaysRecipe = new Recipe();
         public Customer todaySold = new Customer();

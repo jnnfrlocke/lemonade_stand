@@ -30,7 +30,7 @@ namespace LemonadeStand
 
         public void IntroduceGame()
         {
-            Console.WriteLine("Welcome to Lemonade Stand. \nAs you might have guessed, you'll be running your own lemonade stand, taking into account the weather and other factors to determine your recipe, to decide how much lemonade to make, to determine your price, and decide if and how much to advertise. \nYou start with $20 to purchase your supplies. Then you start selling! \nPress enter to continue.");
+            Console.WriteLine($"Welcome to Lemonade Stand. \nAs you might have guessed, you'll be running your own lemonade stand, taking into account the weather and other factors to determine your recipe, to decide how much lemonade to make, to determine your price, and decide if and how much to advertise. \nYou start with ${players.morningCash} to purchase your supplies. Then you start selling! \nPress enter to continue.");
             Console.ReadLine();
         }        
 
@@ -49,18 +49,21 @@ namespace LemonadeStand
                     break;
                 case 14:
                     repeat = 14;
+                    for (int i = 0; i < repeat; i++)
                     {
                         GamePlay();
                     }
                     break;
                 case 21:
                     repeat = 21;
+                    for (int i = 0; i < repeat; i++)
                     {
                         GamePlay();
                     }
                     break;
                 case 28:
                     repeat = 28;
+                    for (int i = 0; i < repeat; i++)
                     {
                         GamePlay();
                     }
