@@ -24,18 +24,22 @@ namespace LemonadeStand
             return cost;
         }
 
-        public void CalculateCost(double lemonsInRecipe, double sugarInRecipe, double iceInRecipe)
+        public double CalculateCost(double lemonsInRecipe, double sugarInRecipe, double iceInRecipe)
 
         {
             costOfLemons = priceOfLemons * lemonsInRecipe;
             costOfSugar = priceOfSugar * sugarInRecipe;
             costOfIce = priceOfIce * iceInRecipe;
+            costOfLemons = Math.Round(costOfLemons, 2);
+            costOfSugar = Math.Round(costOfSugar, 2);
+            costOfIce = Math.Round(costOfIce, 2);
             todayCost = costOfLemons + costOfSugar + costOfIce;
-            CalculateCashLeft(todayCost);
+            //CalculateCashLeft(todayCost);
+            return todayCost;
             //Console.ReadLine();
         }
 
-        public void CalculateCashLeft(double todayCost)
+        public double CalculateCashLeft(double todayCost)
         {
             moneyLeft = startingCash - todayCost;
             if (moneyLeft < 0)
@@ -48,6 +52,7 @@ namespace LemonadeStand
             {
                 Console.WriteLine($"You spent ${todayCost.ToString("0.00")} on supplies and you have ${moneyLeft.ToString("0.00")} left to spend tomorrow. \n\nPress enter to continue.");
             }
+            return moneyLeft;
         }
 
         public double CalcCostPerCup(double numberOfPitchers)
